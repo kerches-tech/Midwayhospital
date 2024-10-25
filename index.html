@@ -759,9 +759,138 @@ _waEmbed(wa_btnSetting, wa_widgetSetting);
 				}
 				
 			});
-    </script>
+    </script><br>
+
+    <style>
+    	*{
+    box-sizing: border-box;
+}
+h1{
+    font-weight: 600;
+    margin: 0;
+}
 
 
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.box{
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.box-cyan::after{
+    background-color: rgb(69, 211, 211);
+}
+
+.box-red::after{
+    background-color: rgb(234, 83, 83);
+}
+
+.box-blue::after{
+    background-color: rgb(84, 158, 242);
+}
+
+.box-orange::after{
+    background-color: rgb(252, 175, 74);
+}
+
+.box-push{
+    transform: translateY(50%);
+}
+
+.box h2{
+    margin: 0;
+}
+
+.box:hover h2.box-cyan{
+    color: rgb(69, 211, 211);
+}
+
+.box:hover h2.box-red{
+    color: rgb(234, 83, 83);
+}
+
+.box:hover h2.box-blue{
+    color: rgb(84, 158, 242);
+}
+
+.box:hover h2.box-orange{
+    color: rgb(252, 175, 74);
+}
+
+.box p {
+    font-size: 14px;
+    margin: 15px 0 10px;
+}
+
+.box:hover p{
+    color: rgb(88, 87, 87);
+}
+
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+.box:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width: 775px){
+    .box-push{
+        transform: translateY(0);
+    }
+}
+    </style>
+
+ <div class="main">
+
+        <div class="box box-cyan box-push">
+            <h2 class="box-cyan">Our Vision</h2>
+            <p>At the forefront of healthcare, transforming lives.</p>
+            <img src="images/icon-supervisor.svg" alt="Supervisor">
+        </div>
+
+        <div class="box box-red">
+            <h2 class="box-red">Our Mission</h2>
+            <p>Transforming lives through patient-centered care.</p>
+            <img src=" images/icon-karma.svg" alt="teambuilder">
+        </div>
+
+        <div class="box box-blue box-push">
+            <h2 class="box-blue">Calculator</h2>
+            <p>Uses data from past projects to provide better delivery estimates</p>
+            <img src="images/icon-calculator.svg" alt="teambuilder">
+        </div>
+
+        <div class="box box-orange">
+            <h2 class="box-orange">Karma</h2>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="images/icon-team-builder.svg " alt="teambuilder">
+        </div>
+    </div>
 
 
 				<!-- SERVICES-7
